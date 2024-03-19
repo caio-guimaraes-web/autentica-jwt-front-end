@@ -17,18 +17,6 @@ export function Home() {
       <main>
         <Feature title="Produto" icon={FiTag} to="/product" />
 
-        {/* {[USER_ROLE.ADMIN, USER_ROLE.SALE].includes(user.role) && (
-          <>
-            {user.role === USER_ROLE.ADMIN && (
-              <Feature title="Fornecedores" icon={FiTruck} to="/suppliers" />
-            )}
-            <Feature
-              title="Relatório de vendas"
-              icon={FiShoppingCart}
-              to="/sales-report"
-            />
-          </>
-        )} */}
         {user.role === USER_ROLE.ADMIN && (
           <Feature title="Fornecedores" icon={FiTruck} to="/suppliers" />
         )}
